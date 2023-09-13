@@ -1,0 +1,142 @@
+#inicios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+}
+#inicios h2 {
+    padding: .5% 0;
+}
+#inicios h5 {
+    text-align: center;
+    color: var(--g);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+}
+#centro {
+    display: flex;
+    align-items: center;
+    margin: 3% 0;
+    width: 100%;
+}
+#centro p {
+    text-align: justify;
+}
+#pa1 {
+    margin-right: 5%;
+    width: 40%;
+}
+#foto {
+    width: 20%;
+}
+#foto img {
+    border-radius: 40px;
+    width: 100%;
+}
+#pa2 {
+    margin-left: 5%;
+    width: 40%;
+}
+#slogan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#slogan p {
+    color: var(--g);
+    padding: 0 20%;
+	font-family: 'Arima', cursive;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1320px) {
+    #pa1 {
+        margin-right: 4%;
+        width: 40%;
+    }
+    #foto {
+        width: 20%;
+    }
+    #foto img {
+        border-radius: 40px;
+        width: 100%;
+    }
+    #pa2 {
+        margin-left: 4%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    #pa1 {
+        margin-right: 4%;
+        width: 40%;
+    }
+    #foto {
+        width: 20%;
+    }
+    #foto img {
+        border-radius: 40px;
+        width: 100%;
+    }
+    #pa2 {
+        margin-left: 4%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #inicios h5 {
+        font-size: 16px;
+    }
+    #centro {
+        display: flex;
+        align-items: center;
+        margin: 3% 0;
+        flex-direction: column;
+    }
+    #pa1 {
+        width: 100%;
+        margin: 0;
+        padding: 0 4%;
+    }
+    #foto {
+        width: 30%;
+        margin: 3% 0;
+    }
+    #foto img {
+        border-radius: 40px;
+        width: 100%;
+    }
+    #pa2 {
+        width: 100%;
+        margin: 0;
+        padding: 0 4%;
+    }
+    #slogan p {
+        font-size: 17px;
+        padding: 0 15%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #inicios {
+        margin-top: 3%;
+    }
+    #inicios h5 {
+        font-size: 14px;
+    }
+    #slogan {
+        margin-top: 2%;
+    }
+    #slogan p {
+        font-size: 16px;
+        padding: 0 10%;
+    }
+}

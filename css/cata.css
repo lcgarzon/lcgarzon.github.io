@@ -1,0 +1,342 @@
+#rosas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url(../img/cata/tuli.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px;
+    padding: 2%;
+}
+#rosas h3 {
+    padding: 5px 0;
+}
+#rosas p {
+    color: white;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    padding: .5% 5%;
+}
+section {
+    width: 100%;
+    padding: 2% 5%;
+}
+#bott {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    width: 100%;
+}
+#bott a{
+    padding: 2% 4%;
+    margin: 0 1%;
+    border-radius: 20px;
+    color: var(--lila);
+    text-decoration: none;
+    border: var(--lila) dotted 2px;
+    transition: all 0.6s ease;
+    text-align: center;
+    width: 25%;
+}
+#bott a:hover {
+    background: var(--lila);
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px rgba(250, 250, 250, 0.8);
+}
+.up {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: var(--lila);
+    right: 65px;
+    bottom: 100px;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 12px;
+}
+.spa {
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+#ramos p span {
+    text-align: center;
+    color: gray;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Productos */
+.jj {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 0;
+}
+.producto {
+    width: 20%;
+    padding: 2.5%;
+    margin: 2%;
+    border: 3px solid var(--cafec);
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+}
+.producto h5 {
+    text-align: center;
+    padding: 5% 0;
+    margin-top: 6%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.4;
+}
+.producto button {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2%;
+    padding: 6%;
+    border-radius: 8px;
+    background: var(--cafec);
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+}
+.producto button:hover {
+    background: var(--durazno);
+}
+/* Fin de productos */
+
+/*Ventana modal*/
+.modal-body {
+    display: flex;
+    width: 100%;
+}
+.modal-body .image {
+    width: 50%;
+    padding: 2%;
+}
+.modal-body .image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.modal-body .descri {
+    width: 50%;
+    padding: 2%;
+}
+.modal-body .descri h6, .modal-body .descri p {
+    text-align: left;
+}
+.modal-body .descri h6 {
+    padding: 4% 0;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--g);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.modal-body .descri p {
+    line-height: 1.4;
+    font-size: 14px;
+    margin: 4px 0;
+}
+.modal-body .descri ul {
+    padding-left: 16px;
+}
+.modal-body .descri ul li {
+    font-size: 14px;
+}
+.modal-body .descri .precio {
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    padding: 4% 0;
+    font-size: 20px;
+}
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+.modal-footer a {
+    width: 50%;
+    text-decoration: none;
+}
+.modal-footer a button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cafec);
+    border: none;
+    transition: all 0.5s ease;
+}
+.modal-footer a button:hover {
+background: var(--durazno);
+}
+.modal-footer a button img {
+    width: 10%;
+    margin: 2%;
+}
+/*Fin de ventana modal*/
+
+#botwha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#botwha a {
+    width: 40%;
+    padding: 3% 2%;
+    text-align: center;
+    font-size: 18px;
+    background: #7bbb5bbe;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+#botwha a:hover {
+    font-size: 19px;
+    width: 42%;
+    background-color: var(--verde);
+}
+#botwha a img {
+    margin-left: 3%;
+}
+#botwha p {
+    width: 60%;
+    margin-top: 2%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1140px) {
+    .up {
+        width: 45px;
+        height: 45px;
+        right: 69px;
+        bottom: 130px;
+        text-decoration: none;
+        border-radius: 50%;
+        padding: 9px 1px 1px 10px;
+    }
+    .up img {
+        width: 75%;
+    }
+    .spa {
+        margin-top: 4%;
+    }
+    .producto h5 {
+        font-size: 16px;
+    }
+    .producto button {
+        font-size: 14px;
+    }
+    #botwha a {
+        width: 34%;
+        font-size: 15px;
+        padding: 3% 2%;
+    }
+    #botwha a:hover {
+        font-size: 16px;
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #bott {
+        flex-wrap: wrap;
+    }
+    #bott a {
+        width: 40%;
+        margin: 1%;
+    }
+    .up {
+        width: 40px;
+        height: 40px;
+        right: 50px;
+        bottom: 110px;
+        text-decoration: none;
+        border-radius: 50%;
+        padding: 7px 1px 1px 8.5px;
+    }
+    .up img {
+        width: 75%;
+    }
+    .spa {
+        margin-top: 3%;
+    }
+    .producto {
+        width: 25%;
+        padding: 3%;
+        margin: 3%;
+    }
+    .producto h5 {
+        font-size: 15px;
+    }
+    .producto button {
+        font-size: 13px;
+    }
+    #botwha a {
+        width: 34%;
+        font-size: 13px;
+        padding: 3% 2%;
+    }
+    #botwha a:hover {
+        font-size: 14px;
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #bott {
+        flex-wrap: wrap;
+    }
+    #bott a {
+        width: 60%;
+        margin: 1%;
+    }
+    .up {
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        bottom: 80px;
+        text-decoration: none;
+        border-radius: 50%;
+        padding: 2px 1px 1px 6px;
+    }
+    .up img {
+        width: 80%;
+    }
+    .spa {
+        margin-top: 8%;
+    }
+    .producto {
+        width: 40%;
+        padding: 5%;
+        margin: 4%;
+    }
+    .producto h5 {
+        font-size: 14px;
+    }
+    #botwha {
+        margin-top: 5%;
+    }
+    #botwha a {
+        width: 35%;
+        font-size: 10px;
+        padding: 3% 2%;
+    }
+    #botwha a:hover {
+        font-size: 11px;
+        width: 36.5%;
+    }
+}

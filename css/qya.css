@@ -1,0 +1,140 @@
+#girasol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url(../img/qya/1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px;
+    padding: 2%;
+}
+#girasol h3 {
+    padding: 1%;
+}
+#girasol p {
+    color: white;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    padding: .5% 5%;
+}
+#q {
+    width: 100%;
+    padding: 0 8%;
+    margin: 3% 0 4% 0;
+}
+#q h2 {
+    margin: 1% 0;
+}
+#pre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#pre details {
+    background: var(--lila);
+    border-radius: 8px;
+    padding: 1% 2%;
+    width: 28%;
+    color: white;
+    cursor: pointer;
+    margin: 1% 2%;
+    display: flex;
+}
+#pre details a {
+    color: var(--lila);
+    background: var(--durazno);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4% 8%;
+    border-radius: 20px;
+    transition: .5s;
+    margin-top: 2%;
+}
+#pre details a:hover {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
+}
+#pre summary {
+    font-size: 16px;
+    font-weight: 600;
+}
+#pre p {
+    font-size: 14px;
+    padding: 2% 4%;
+    text-align: left;
+    font-weight: 300;
+}
+#poli {
+    width: 100%;
+    padding: 0 13%;
+    margin: 1% 0;
+}
+#poli li {
+    margin: 2.5%;
+}
+#poli li::marker {
+    color: var(--lila);
+    font-weight: bold;
+    font-size: 20px;
+}
+#poli li span {
+    color: var(--lila);
+    font-weight: bold;
+    font-size: 20px;
+}
+#poli p {
+    text-align: left;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 960px) {
+    #girasol p {
+        font-size: 18px;
+    }
+    #pre details {
+        width: 40%;
+        padding: 2% 4%;
+    }
+    #pre details#uni {
+        width: 84%;
+    }
+    #pre summary {
+        font-size: 14px;
+    }
+    #pre p {
+        font-size: 13px;
+    }
+    #poli li::marker {
+        font-size: 18px;
+    }
+    #poli li span{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #girasol p {
+        font-size: 16px;
+    }
+    #pre details {
+        width: 80%;
+        padding: 4%;
+    }
+    #pre details#uni {
+        width: 80%;
+    }
+    #pre summary {
+        font-size: 13px;
+    }
+    #pre p {
+        font-size: 12px;
+    }
+    #poli li::marker {
+        font-size: 16px;
+    }
+    #poli li span{
+        font-size: 16px;
+    }
+}
