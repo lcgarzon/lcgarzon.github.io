@@ -9,14 +9,11 @@
     border-radius: 0 0 20px 20px;
     padding: 2%;
 }
-#rosas h3 {
-    padding: 5px 0;
-}
 #rosas p {
     color: white;
     font-family: 'Arima', cursive;
     font-size: 20px;
-    padding: .5% 5%;
+    padding: 0 5%;
 }
 section {
     width: 100%;
@@ -138,7 +135,7 @@ section {
     font-size: 18px;
     line-height: 1.4;
     color: var(--g);
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 .modal-body .descri p {
     line-height: 1.4;
@@ -297,6 +294,9 @@ background: var(--durazno);
 }
 
 @media screen and (max-width: 540px) {
+    #rosas {
+        padding: 5% 2%;
+    }
     #bott {
         flex-wrap: wrap;
     }
@@ -325,7 +325,7 @@ background: var(--durazno);
         margin: 4%;
     }
     .producto h5 {
-        font-size: 14px;
+        font-size: 13px;
     }
     #botwha {
         margin-top: 5%;
